@@ -1,0 +1,28 @@
+<!DOCTYPE.html>
+
+<HEAD>
+<TITLE >MISSION 1-1</TITLE>
+
+</HEAD>
+<BODY>
+<div align="center">
+<H2>quanto fa 1+1</H2>
+
+<input type="text" id="eta" placeholder="risultato">
+<button onclick="verificaMaggioreEta()">Verifica</button>
+
+<p id="risultato"></p>
+</div>
+
+<script>
+function verificaMaggioreEta() {
+  let eta = document.getElementById("eta").value;
+  
+  // Condizione logica
+  if (eta==2) {
+    document.getElementById("risultato").innerHTML ="correct! <a href= 'math game.html'> BACK </a>" 
+  } else {
+    document.getElementById("risultato").innerText = "wrong";
+  }
+} 
+</script>

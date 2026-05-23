@@ -1,0 +1,28 @@
+<!DOCTYPE.html>
+<h2 align="center">MISSION 2-1</h2>
+<p align="center">
+Trova il numero di due cifre tale che:<br>
+- La somma delle cifre è 9<br>
+- È divisibile per 3<br>
+- È maggiore di 50
+</p>
+
+<div align="center">
+  <input type="text" id="numero" placeholder="inserisci il numero">
+  <button onclick="verificaNumero()">Verifica</button>
+</div>
+
+<p id="risultato" align="center"></p>
+<script>
+function verificaNumero() {
+  let n = document.getElementById("numero").value;
+
+  if (n == 63) {
+    document.getElementById("risultato").innerHTML =
+      "CORRECT 🏆 <a href='math game.html'>BACK</a>";
+  } else {
+    document.getElementById("risultato").innerText =
+      "wrong 💀";
+  }
+}
+</script>

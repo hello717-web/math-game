@@ -1,0 +1,25 @@
+<!DOCTYPE.html>
+<h2 align="center">MISSION 1-2</h2>
+<p align="center">x + y = 5<br>x − y = 1</p>
+
+<div align="center">
+  x = <input type="text" id="x">
+  y = <input type="text" id="y">
+  <button onclick="verificaSistema()">Verifica</button>
+</div>
+
+<p id="risultato" align="center"></p>
+<script>
+function verificaSistema() {
+  let x = document.getElementById("x").value;
+  let y = document.getElementById("y").value;
+
+  if (x == 3 && y == 2) {
+    document.getElementById("risultato").innerHTML =
+      "corretto! <a href='math game.html'>BACK</a>";
+  } else {
+    document.getElementById("risultato").innerText =
+      "wrong💀";
+  }
+}
+</script>
