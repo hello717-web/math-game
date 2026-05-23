@@ -17,7 +17,7 @@ Trova il numero di due cifre tale che:<br>
 function verificaNumero() {
   let n = document.getElementById("numero").value;
 
-  if (n == 63 || n == 54 || n == 72 || n == 81 || n == 90) {
+  if([63, 54, 72, 81, 90].includes(Number(n)))  {
     document.getElementById("risultato").innerHTML =
       "CORRECT 🏆 <a href='https://hello717-web.github.io/math-game/index.html'>BACK</a>";
   } else {
